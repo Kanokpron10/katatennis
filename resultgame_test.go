@@ -25,7 +25,7 @@ func Test_ResultGame_Input_Player1_Score_1_Player2_Score_0_Should_Be_15_LOVE(t *
 	}
 }
 
-func Test_ResultGame_Input_Player1_Score_2_Player2_Score_0_Should_Be_15_LOVE(t *testing.T) {
+func Test_ResultGame_Input_Player1_Score_2_Player2_Score_0_Should_Be_30_LOVE(t *testing.T) {
 	expectResult := "30-LOVE"
 
 	actualResult := katatennis.ResultGame(2, 0)
