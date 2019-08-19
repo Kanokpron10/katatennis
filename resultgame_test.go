@@ -44,3 +44,13 @@ func Test_ResultGame_Input_Player1_Score_2_Player2_Score_1_Should_Be_30_15(t *te
 		t.Errorf("Expect %s but got %s", expectResult, actualResult)
 	}
 }
+
+func Test_ResultGame_Input_Player1_Score_2_Player2_Score_2_Should_Be_30_30(t *testing.T) {
+	expectResult := "30-30"
+
+	actualResult := katatennis.ResultGame(2, 2)
+
+	if expectResult != actualResult {
+		t.Errorf("Expect %s but got %s", expectResult, actualResult)
+	}
+}
