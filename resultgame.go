@@ -8,5 +8,13 @@ func ResultGame(player1score, player2score int) string {
 		3: "40",
 	}
 
+	if player1score == 4 {
+		return "Player 1 Win"
+	}
+
+	if player2score == 4 {
+		return "Player 2 Win"
+	}
+
 	return mapResult[player1score] + "-" + mapResult[player2score]
 }
